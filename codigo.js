@@ -1,3 +1,6 @@
-function toggleMenu() {
-    document.getElementById('menu').classList.toggle('active');
+function bajar(){
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: 'smooth'
+    });
 }
