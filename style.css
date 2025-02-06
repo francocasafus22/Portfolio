@@ -6,47 +6,54 @@
 }
 
 body {
-  background-color: #303841;
   font-family: 'roboto', sans-serif;
-  background-image: radial-gradient(#3A4750, #303841);
+  background-image: radial-gradient(circle at top,#183D3D, #040D12);
   
 }
 
-.navbar-container {
+.mynavbar-container {
   display: flex;
   justify-content: center;
   
 }
 
-.navbar {
-  background-color: #3A4750;
-  padding: 15px 10px;
-  border-radius: 20px;
+.mynavbar {
+  background-color:#183D3D;
+  padding: 9px 0 0 5px;
+  border-radius: 50px;
   max-width: 900px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   margin-top: 20px;
+  height: 70px;
+  box-shadow: #040D12 0px 2px 4px 0px;
 }
 
-.navbar ul {
+.mynavbar ul {
   list-style: none;
   display: flex;
 }
 
-.navbar ul li {
-  margin: 0 15px;
+.mynavbar ul li {
+  margin: 0 25px 0 -10px;
 }
 
-.navbar ul li a {
-  color: #F3F3F3;
+.mynavbar ul li a {
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 10px 8px;
   border-radius: 15px;
   transition: 0.3s;
+  border: #93B1A6;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar ul li a:hover {
-  background-color: #303841;
+.mynavbar ul li a:hover {
+  background-color:#5C8374;
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -67,12 +74,12 @@ body {
 }
 
 .info h1{
-  font-size: 6em; 
-  color: #F3F3F3;
+  font-size: 6rem; 
+  color: #93B1A6;
 }
 .info h2{
   font-size: 2em;
-  color: #2185D5;
+  color: #5C8374;
   
 }
 
@@ -83,8 +90,8 @@ body {
   .info h2{
     font-size: 1.5em;
   }
-  .navbar ul li a {  
-    padding: 10px 1px;
+  .mynavbar{
+    transform: scale(0.9);
   }
 }
 
@@ -98,10 +105,14 @@ section{
   align-items:end;
   justify-content: center;
   bottom: 10px;
-  background-color: #2185D5;
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  color: #93B1A6;
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+.separador:hover{
+  cursor: pointer;
+  color:#183D3D;
 }
 
 .flecha{
@@ -118,5 +129,8 @@ section{
   flex-direction: column;
 }
 
+.icono{
+  color:#93B1A6;
+}
 
 
