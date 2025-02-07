@@ -10,23 +10,23 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
 
     <div class="mynavbar-container">
-        <nav class="mynavbar">
+        <nav id="mynavbar" class="mynavbar">
             <ul id="mymenu">
-                <li><a href="#inicio">
+                <li><a href="#inicio" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Inicio">
                     <svg class="icono user"xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                       </svg>
                 </a></li>
-                <li><a href="#proyectos">
+                <li><a href="#proyectos" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Proyectos">
                     <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
                         <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
                         <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
                       </svg>
                 </a></li>
-                <li><a href="#contacto">
+                <li><a href="#contacto" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Contacto">
                     <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
                       </svg>
@@ -34,8 +34,6 @@
             </ul>
         </nav>
     </div>
-
-
 
     <div id="inicio"class="contenedor-info">
 
@@ -46,7 +44,7 @@
         </div>
 
         <div class="separador">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" onclick="bajar()">
+            <svg class="animacion_flecha" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" onclick="bajar()">
                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
               </svg>
         </div>
@@ -54,17 +52,93 @@
 
 
     <section id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyectos">
-            <div class="proyecto">
-                <h3>Proyecto 1</h3>
-                <p>Descripcion del proyecto 1.</p>
+      
+        <div class="card mb-3 mx-3" style="max-width: 540px;" >
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <img
+                        src="https://marco-cruz.netlify.app/images/portfolio/cloud-box.webp"
+                        class="img-fluid rounded-start"
+                        alt="Card title"
+                    />
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content is a
+                            little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"
+                                >Last updated 3 mins ago</small
+                            >
+                        </p>
+                    </div>
+                </div>
+                
             </div>
-            <div class="proyecto">
-                <h3>Proyecto 2</h3>
-                <p>Descripcion del proyecto 2.</p>
+            
+        </div>
+
+        
+        <div class="card mb-3 mx-3" style="max-width: 540px;" >
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <img
+                        src="https://marco-cruz.netlify.app/images/portfolio/cloud-box.webp"
+                        class="img-fluid rounded-start"
+                        alt="Card title"
+                    />
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content is a
+                            little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"
+                                >Last updated 3 mins ago</small
+                            >
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </div>
+
+        <div class="card mb-3 mx-3" style="max-width: 540px;" >
+            <div class="row g-0">
+                <div class="col-md-12">
+                    <img
+                        src="https://marco-cruz.netlify.app/images/portfolio/cloud-box.webp"
+                        class="img-fluid rounded-start"
+                        alt="Card title"
+                    />
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                            This is a wider card with supporting text below as a
+                            natural lead-in to additional content. This content is a
+                            little bit longer.
+                        </p>
+                        <p class="card-text">
+                            <small class="text-muted"
+                                >Last updated 3 mins ago</small
+                            >
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
     </section>
 
     <section id="contacto">
@@ -75,7 +149,9 @@
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Instagram</a></li>
         </ul>
+        
     </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

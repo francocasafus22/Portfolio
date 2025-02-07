@@ -7,7 +7,7 @@
 
 body {
   font-family: 'roboto', sans-serif;
-  background-image: radial-gradient(circle at top,#183D3D, #040D12);
+  background-image: radial-gradient(circle at center,#183D3D, #040D12);
   
 }
 
@@ -26,6 +26,7 @@ body {
   margin-top: 20px;
   height: 70px;
   box-shadow: #040D12 0px 2px 4px 0px;
+  z-index: 1;
 }
 
 .mynavbar ul {
@@ -121,16 +122,59 @@ section{
 }
 
 #proyectos{
-  
-  color: #F3F3F3;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  border-radius: 50px;
 }
 
 .icono{
   color:#93B1A6;
 }
 
+.active{
+  background-color: #93B1A6;
+  .icono{
+    color: #183D3D;
+  }
+}
+
+.custom-popover{
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-popover .popover-body {
+  background-color: #93B1A6;  
+  color: #183D3D;  
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  box-shadow: #040D12 0px 2px 4px 0px;
+}
+
+.custom-popover .popover-arrow {
+  display: none !important; 
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.animacion_flecha{
+  animation: flotar 2s ease-in-out infinite;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #proyectos{
+    flex-direction: column;
+    height: 175vh;
+  }
+
+}
 
