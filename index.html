@@ -16,16 +16,24 @@
         <nav id="mynavbar" class="mynavbar">
             <ul id="mymenu">
                 <li><a href="#inicio" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Inicio">
-                    <svg class="icono user"xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
-                      </svg>
+                    <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                    </svg>
                 </a></li>
+                
                 <li><a href="#proyectos" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Proyectos">
                     <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
                         <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5"/>
                         <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85z"/>
                       </svg>
                 </a></li>
+                
+                <li><a href="#SobreMi" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Sobre Mi">
+                    <svg class="icono user"xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                      </svg>
+                </a></li>
+
                 <li><a href="#contacto" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Contacto">
                     <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
@@ -141,14 +149,46 @@
 
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p> Puedes contactarme a traves de mis redes sociales:</p>
-        <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+    <section id="SobreMi">
+
+    </section>
+
+    <section id="contacto" class="d-flex justify-content-center align-items-center vh-100">
+        
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card shadow-lg p-4">
+                        <h2 class="text-center mb-3 text-success-emphasis">Contacto</h2>
+                        <form>
+                            <!-- Nombre -->
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                            </div>
+        
+                            <!-- Correo -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
+                            </div>
+        
+                            <!-- Mensaje -->
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje..." required style="resize: none;"></textarea>
+                            </div>
+        
+                            <!-- Botón -->
+                            <div class="d-grid">
+                                <button type="submit" class="btn bg-success-subtle text-success-emphasis btn-lg">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
         
     </section>
     
